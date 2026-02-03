@@ -25,6 +25,7 @@ This repository contains samples and demonstrations for a 6-part series focused 
 - **Model Context Protocol (MCP)** for integration
 - **.NET** ecosystem and Data API Builder
 - **GitHub** integration and workflows
+- **Microsoft Agents SDK** for automation samples
 
 
 ## Contributing
@@ -42,3 +43,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.
 - [Microsoft Copilot Studio](https://docs.microsoft.com/microsoft-copilot-studio/)
 - [Data API Builder](https://learn.microsoft.com/azure/data-api-builder/)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
+- [Microsoft 365 Agents SDK](https://learn.microsoft.com/microsoft-365/agents-sdk/)
