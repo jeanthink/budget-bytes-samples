@@ -1,0 +1,24 @@
+{
+  "name": "woolworths-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "microsoft-agents-sdk",
+    "woolworths",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Microsoft Agents SDK sample for Woolworths restock automation",
+  "dependencies": {
+    "@microsoft/agents-hosting": "^1.2.3",
+    "@microsoft/agents-hosting-express": "^1.2.3",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.1"
+  },
+  "type": "module"
+}

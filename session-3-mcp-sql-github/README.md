@@ -28,11 +28,12 @@ This session demonstrates Model Context Protocol (MCP) integration with SQL data
 ## Files Structure
 
 ```
-/dotnet-app/           # .NET application demonstrating MCP
-/data-api-builder/     # Data API Builder configuration
-/github-integration/   # GitHub connector and workflows
-/sql-setup/           # Database schema and setup scripts
-/docs/                # Technical documentation
+/dotnet-app/             # .NET application demonstrating MCP
+/data-api-builder/       # Data API Builder configuration
+/github-integration/     # GitHub connector and workflows
+/sql-setup/             # Database schema and setup scripts
+/docs/                  # Technical documentation
+/woolworths-agent/       # Microsoft Agents SDK restock sample
 ```
 
 ## Prerequisites

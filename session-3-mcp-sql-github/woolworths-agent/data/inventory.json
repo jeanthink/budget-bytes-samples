@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Eggs",
+    "sku": "EGGS-003",
+    "onHand": 1,
+    "reorderThreshold": 2,
+    "expiresOn": "2026-02-06"
+  },
+  {
+    "name": "Yogurt",
+    "sku": "YOGURT-004",
+    "onHand": 3,
+    "reorderThreshold": 2,
+    "expiresOn": "2026-02-12"
+  }
+]
