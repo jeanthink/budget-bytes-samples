@@ -34,7 +34,7 @@ npm start
 The agent exposes three tools:
 
 - `checkInventory` → returns inventory items.
-- `restockItems` → prepares a trolley payload for items that need restocking (the agent filters to low-stock or expiring items before building the order).
+- `restockItems` → prepares a trolley payload for the provided items (the agent filters the supplied list to low-stock or expiring items before building the order).
 - `checkAndRestock` → loads inventory and prepares a trolley payload in one step.
 
 ## Safe automation guidance

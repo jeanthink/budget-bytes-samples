@@ -27,17 +27,25 @@ export async function loadInventoryStatus({ source, filePath }) {
 }
 
 export function findRestockCandidates(items) {
-  const today = new Date();
+  const today = startOfDay(new Date());
 
   return items.filter((item) => {
-    const expiresOn = item.expiresOn ? new Date(item.expiresOn) : null;
-    const isExpiredSoon = expiresOn ? expiresOn <= addDays(today, 3) : false;
-    return item.onHand <= item.reorderThreshold || isExpiredSoon;
+    const expiresOn = item.expiresOn ? startOfDay(new Date(item.expiresOn)) : null;
+    const isExpiringSoon = expiresOn
+      ? expiresOn >= today && expiresOn <= addDays(today, 3)
+      : false;
+    return item.onHand <= item.reorderThreshold || isExpiringSoon;
   });
 }
 
 function addDays(date, days) {
   const copy = new Date(date);
   copy.setDate(copy.getDate() + days);
+  return copy;
+}
+
+function startOfDay(date) {
+  const copy = new Date(date);
+  copy.setHours(0, 0, 0, 0);
   return copy;
 }
